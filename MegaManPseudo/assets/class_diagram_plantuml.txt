@@ -1,0 +1,174 @@
+@startuml
+!theme vibrant
+Level "1" -- "many" Room
+Level "1" -- "1" Player
+GameEntity <|-- Player
+GameEntity <|-- Enemy
+GameObject <|-- Projectile
+GameObject <|-- Door
+Enemy <|-- Boss
+Enemy <|-- WheelBot
+Enemy <|-- Stormhead
+Boss <|-- BringerOfRuin
+Boss <|-- EvilWizard
+Room "1" -- "1" Player
+Room "1" -- "0..*" Enemy
+Room "1" -- "0..1" Boss
+Room "1" -- "0..1" Projectile
+Room "1" -- "1..*" Door
+PlayState -- "1" Level
+PlayState -- "1" Player
+PlayState -- "1" UserInterface
+UserInterface -- "1" Player
+
+Class GameEntity{
+Vector position
+Vector dimensions
+Vector velocity
+Number totalHealth
+Number health
+Hitbox hitbox
+Hitbox hitboxOffsets
+Sprite[] sprites
+StateMachine stateMachine
+Number currentAnimation
+Boolean isDead
+Boolean cleanUp
+Number direction
+update()
+render()
+didCollideWithEntity()
+didCollideWithObject()
+changeState()
+} 
+
+class Player{
+Sprite[] idleSprites
+Sprite[] walkingSprites
+Sprite[] shootingSprites
+Sprite[] jumpingSprites
+Sprite[] dyingSprites
+Boolean isInvulnerable
+Timer invulnerabilityTimer
+render()
+update(dt)
+initializeStateMachine()
+receiveDamage(damage)
+becomeInvulnerable()
+startInvulnerabilityTimer()
+}
+
+class Enemy{
+Sprite[] idleSprites
+Sprite[] roamingSprites
+Sprite[] attackingSprites
+Sprite[] jumpingSprites
+Sprite[] dyingSprites
+Number aggroRange
+Number attackRange
+render()
+update(dt)
+}
+
+class Boss{
+render()
+update(dt)
+}
+
+class Room{
+Player player
+Vector dimensions
+Sprite[] sprites
+Tile[] tiles
+Enemy[] enemies
+GameObject[] objects
+Vector adjacentOffset
+Boolean isShifting
+update(dt)
+render()
+cleanUpEntities()
+cleanUpObjects()
+updateEnemies(dt)
+updateObjects(dt)
+renderTiles()
+}
+
+Class Level{
+Player player
+Room[] rooms
+Room currentRoom
+Vector camera
+Boolean isShifting
+update(dt)
+render()
+beginShifting(nextRoomPosition)
+prepareRoomAndPlayerForShift(nextRoomPosition)
+getNewPlayerPosition(nextRoomPosition)
+tweenRoomAndPlayer(nextRoomPosition, newPlayerPosition)
+finishShifting(nextRoomPosition)
+resetRooms()
+resetPlayer(newRoomPosition)
+}
+
+Class GameObject{
+Vector dimensions
+Vector position
+Hitbox hitbox
+Sprite[] sprites
+Number currentFrame
+boolean cleanUp
+Boolean isSolid
+Boolean isCollidable
+Boolean isConsumable
+Boolean wasCollided
+Boolean wasConsumed
+update(dt)
+render()
+onConsume()
+onCollision()
+didCollideWithEntity(hitbox)
+}
+
+Class Projectile{
+GameEntity shooter
+Vector velocity
+update(dt)
+render()
+}
+
+Class Door{
+Number direction
+Boolean isOpen
+Sprite[] closedSprites
+Sprite[] openSprites
+update()
+render()
+open()
+close()
+didPlayerCollide()
+}
+
+Class WheelBot{
+shoot()
+}
+
+Class EnemyFactory{
+createInstance(type, sprites)
+}
+
+Class PlayState{
+Player player
+Level level
+UserInterface userInterface
+update(dt)
+render()
+}
+
+Class UserInterface{
+Player player
+Sprite[] sprites
+HealthBar playerHealth
+HealthBar bossHealth
+render()
+}
+@enduml

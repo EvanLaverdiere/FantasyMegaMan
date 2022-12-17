@@ -1,0 +1,38 @@
+{
+    "rooms": [
+        [
+            {
+                "position": {
+                    "x": 18,
+                    "y": 5
+                },
+                "direction": 2
+            }
+        ],
+        [
+            {
+                "position": {
+                    "x": 0,
+                    "y": 5
+                },
+                "direction": 3
+            },
+            {
+                "position": {
+                    "x": 21,
+                    "y": 7
+                },
+                "direction": 2
+            }
+        ],
+        [
+            {
+                "position": {
+                    "x":0,
+                    "y":7
+                },
+                "direction": 3
+            }
+        ]
+    ]
+}

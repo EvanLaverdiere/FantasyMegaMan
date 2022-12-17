@@ -1,0 +1,38 @@
+{
+    "levels": [
+        {
+            "rooms": [
+                [
+                    {
+                        "type": "wheelbot",
+                        "position": {
+                            "x": 17,
+                            "y": 14
+                        }
+                    },
+                    {
+                        "type": "wheelbot",
+                        "position": {
+                            "x": 6,
+                            "y": 14
+                        }
+                    },
+                    {
+                        "type": "stormhead",
+                        "position": {
+                            "x": 18,
+                            "y": 14
+                        }
+                    }, 
+                    {
+                        "type": "stormhead",
+                        "position": {
+                            "x": 7,
+                            "y": 14
+                        }
+                    }
+                ]
+            ]
+        }
+    ]
+}

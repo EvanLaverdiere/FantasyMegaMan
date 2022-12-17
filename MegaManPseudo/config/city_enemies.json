@@ -1,0 +1,38 @@
+{
+    "rooms": [
+        [
+            {
+                "type": "stormhead",
+                "position": {
+                    "x": 15,
+                    "y": 6
+                }
+            }
+        ],
+        [
+            {
+                "type":"wheelbot",
+                "position":{
+                    "x":9,
+                    "y":6
+                }
+            },
+            {
+                "type": "wheelbot",
+                "position": {
+                    "x": 13,
+                    "y": 8
+                }
+            }
+        ],
+        [
+            {
+                "type": "evil-wizard",
+                "position":{
+                    "x": 16,
+                    "y": 7
+                }
+            }
+        ]
+    ]
+}

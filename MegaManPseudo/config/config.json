@@ -1,0 +1,246 @@
+{
+	"images": [
+		{
+			"name": "player",
+			"path": "./assets/images/player/spritesheet.png",
+			"width": 512,
+			"height": 512
+		},
+		{
+			"name": "ruins-enlarged",
+			"path": "./assets/images/tilesets/ruins/tiles-enlarged.png",
+			"width": 256,
+			"height": 352
+		},
+		{
+			"name": "city-enlarged",
+			"path": "./assets/images/tilesets/Action Pack - CITY/Action Pack - CITY/Assets/Assets_City_enlarged.png",
+			"width": 544,
+			"height": 448
+		},
+		{
+			"name": "arrow",
+			"path": "./assets/images/player/projectile.png",
+			"width": 40,
+			"height": 5
+		},
+		{
+			"name": "botwheel-idle",
+			"path": "./assets/images/enemies/bot_wheel/static idle.png",
+			"width": 117,
+			"height": 26
+		},
+		{
+			"name": "botwheel-roaming",
+			"path": "./assets/images/enemies/bot_wheel/move with FX.png",
+			"width": 117,
+			"height": 208
+		},
+		{
+			"name": "botwheel-attacking",
+			"path": "./assets/images/enemies/bot_wheel/charge.png",
+			"width": 117,
+			"height": 104
+		},
+		{
+			"name": "botwheel-shooting",
+			"path": "./assets/images/enemies/bot_wheel/shoot with FX.png",
+			"width": 117,
+			"height": 104
+		},
+		{
+			"name": "botwheel-bullet",
+			"path": "./assets/images/enemies/bot_wheel/shoot FX.png",
+			"width": 117,
+			"height": 104
+		},
+		{
+			"name": "botwheel-hurt",
+			"path": "./assets/images/enemies/bot_wheel/damaged.png",
+			"width": 117,
+			"height": 52
+		},
+		{
+			"name": "botwheel-death",
+			"path": "./assets/images/enemies/bot_wheel/death.png",
+			"width": 117,
+			"height": 156
+		},
+		{
+			"name": "stormhead-idle",
+			"path": "./assets/images/enemies/stormhead/idle.png",
+			"width": 119,
+			"height": 1116
+		},
+		{
+			"name": "stormhead-roaming",
+			"path": "./assets/images/enemies/stormhead/run.png",
+			"width": 119,
+			"height": 1240
+		},
+		{
+			"name": "stormhead-attacking",
+			"path": "./assets/images/enemies/stormhead/attack.png",
+			"width": 119,
+			"height": 2604
+		},
+		{
+			"name": "stormhead-hurt",
+			"path": "./assets/images/enemies/stormhead/damaged.png",
+			"width": 119,
+			"height": 248
+		},
+		{
+			"name": "stormhead-death",
+			"path": "./assets/images/enemies/stormhead/death.png",
+			"width": 119,
+			"height": 1116
+		},
+		{
+			"name": "evil-wizard-idle",
+			"path": "./assets/images/enemies/evil_wizard_2/idle.png",
+			"width": 2000,
+			"height": 250
+		},
+		{
+			"name": "evil-wizard-roaming",
+			"path": "./assets/images/enemies/evil_wizard_2/run.png",
+			"width": 2000,
+			"height": 250
+		},
+		{
+			"name": "evil-wizard-attacking",
+			"path": "./assets/images/enemies/evil_wizard_2/Attack1.png",
+			"width": 2000,
+			"height": 250
+		},
+		{
+			"name": "evil-wizard-second-attack",
+			"path": "./assets/images/enemies/evil_wizard_2/Attack2.png",
+			"width": 2000,
+			"height": 250
+		},
+		{
+			"name": "evil-wizard-hurt",
+			"path": "./assets/images/enemies/evil_wizard_2/Take hit.png",
+			"width": 750,
+			"height": 250
+		},
+		{
+			"name": "evil-wizard-death",
+			"path": "./assets/images/enemies/evil_wizard_2/Death.png",
+			"width": 1750,
+			"height": 250
+		},
+		{
+			"name": "industrial-bg",
+			"path": "./assets/images/backgrounds/parallax-industrial-pack/Sprites/bg.png",
+			"width": 272,
+			"height": 160
+		},
+		{
+			"name": "industrial-buildings",
+			"path": "./assets/images/backgrounds/parallax-industrial-pack/Sprites/buildings.png",
+			"width": 272,
+			"height": 150
+		},
+		{
+			"name": "industrial-far-buildings",
+			"path": "./assets/images/backgrounds/parallax-industrial-pack/Sprites/far-buildings.png",
+			"width": 213,
+			"height": 142
+		},
+		{
+			"name": "industrial-foreground",
+			"path": "./assets/images/backgrounds/parallax-industrial-pack/Sprites/skill-foreground.png",
+			"width": 272,
+			"height": 104
+		}
+	],
+	"fonts": [
+		{
+			"name": "joystix-monospace",
+			"path": "./assets/fonts/joystix monospace.ttf"
+		},
+		{
+			"name": "mega-man-zx",
+			"path": "./assets/fonts/Mega-Man-ZX.ttf"
+		}
+	],
+	"sounds": [
+		{
+			"name": "laser",
+			"path": "./assets/sounds/effects/376694__daleonfire__laser.wav",
+			"size": 5,
+			"volume": 0.2
+		},
+		{
+			"name": "player-death",
+			"path": "./assets/sounds/effects/346694__deleted-user-2104797__body-fall-02.wav",
+			"size": 1,
+			"volume": 1
+		},
+		{
+			"name": "player-hurt",
+			"path": "./assets/sounds/effects/211634__qubodup__damage.flac",
+			"size": 1,
+			"volume": 0.3
+		},
+		{
+			"name": "enemy-death",
+			"path": "./assets/sounds/effects/506587__mrthenoronha__kill-enemy-2-8-bit.wav",
+			"size": 5,
+			"volume": 0.1
+		},
+		{
+			"name": "door-opening",
+			"path": "./assets/sounds/effects/543654__alexo400__sci-fi-door-2.wav",
+			"size": 1,
+			"volume": 0.5
+		},
+		{
+			"name": "boss-intro",
+			"path": "./assets/sounds/music/271340__foolboymedia__boss-stage.wav",
+			"size": 1,
+			"volume": 1
+		},
+		{
+			"name": "boss-fight",
+			"path": "./assets/sounds/music/100877__xythe__fight.wav",
+			"size": 1,
+			"volume": 1,
+			"loop": true
+		},
+		{
+			"name": "level-victory",
+			"path": "./assets/sounds/music/462250__silverillusionist__victory-sound-1.wav",
+			"size": 1,
+			"volume": 1
+		},
+		{
+			"name": "industrial",
+			"path": "./assets/images/backgrounds/parallax-industrial-pack/Industrial Theme Music/industrial.wav",
+			"size": 1,
+			"volume": 0.5,
+			"loop": true
+		},
+		{
+			"name": "wizard-fire",
+			"path": "./assets/sounds/effects/508834__mrthenoronha__fire-2-8-bit.wav",
+			"size": 1,
+			"volume": 1
+		},
+		{
+			"name": "wheelbot-shoot",
+			"path": "./assets/sounds/effects/151020__bubaproducer__laser-shot-big-4.wav",
+			"size": 5,
+			"volume": 0.5
+		},
+		{
+			"name": "stormhead-zap",
+			"path": "./assets/sounds/effects/512471__michael-grinnell__electric-zap.wav",
+			"size": 2,
+			"volume": 0.5
+		}
+	]
+}

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.9" tiledversion="1.9.2" orientation="orthogonal" renderorder="right-down" width="19" height="11" tilewidth="32" tileheight="32" infinite="0" nextlayerid="2" nextobjectid="1">
+ <editorsettings>
+  <export target="city_test_map_2.json" format="json"/>
+ </editorsettings>
+ <tileset firstgid="1" source="../assets/images/tilesets/city_tileset_enlarged.tsx"/>
+ <layer id="1" name="Tile Layer 1" width="19" height="11">
+  <data encoding="csv">
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,92,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,109,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,109,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,109,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,126,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+168,186,186,186,186,186,186,150,186,150,151,186,150,151,151,151,151,152,92,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,109,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,109,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,126
+</data>
+ </layer>
+</map>
