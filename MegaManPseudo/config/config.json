@@ -160,7 +160,7 @@
 	"fonts": [
 		{
 			"name": "joystix-monospace",
-			"path": "./assets/fonts/joystix monospace.ttf"
+			"path": "'./assets/fonts/joystix monospace.ttf'"
 		},
 		{
 			"name": "mega-man-zx",
